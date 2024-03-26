@@ -40,6 +40,14 @@
                     android:text="@string/screen_1"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
+
+                <ImageButton
+                    android:layout_width="351dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="end"
+                    android:id="@+id/prof"
+                    android:background="@color/navyblue"
+                    android:src="@drawable/profile" />
             </LinearLayout>
 
             <LinearLayout

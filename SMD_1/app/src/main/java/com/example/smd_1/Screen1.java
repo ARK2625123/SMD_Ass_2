@@ -12,7 +12,7 @@ import androidx.fragment.app.Fragment;
 import androidx.fragment.app.FragmentManager;
 
 public class Screen1 extends AppCompatActivity {
-ImageButton Bback;
+ImageButton Bback,prof;
 Button call,message;
 Fragment fragCall,fragMessage;
 FragmentManager manager;
@@ -26,6 +26,15 @@ FragmentManager manager;
             @Override
             public void onClick(View view) {
                 Intent intent=new Intent(Screen1.this,MainActivity.class);
+                startActivity(intent);
+                finish();
+            }
+
+        });
+        prof.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent=new Intent(Screen1.this,Screen2.class);
                 startActivity(intent);
                 finish();
             }
@@ -66,6 +75,7 @@ FragmentManager manager;
         Bback=findViewById(R.id.Bback);
         call=findViewById(R.id.call);
         message=findViewById(R.id.message);
+        prof=findViewById(R.id.prof);
         fragCall=new fragcall();
         fragMessage=new fragmessage();
     }
