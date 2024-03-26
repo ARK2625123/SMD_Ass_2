@@ -22,6 +22,7 @@
             </intent-filter>
         </activity>
         <activity android:name=".Screen1"></activity>
+
     </application>
 
 </manifest>

@@ -4,5 +4,6 @@
     <color name="white">#FFFFFFFF</color>
     <color name="navyblue">#31285c </color>
     <color name="Hint">#949494 </color>
+    <color name="Selected">#5b4786 </color>
 
 </resources>

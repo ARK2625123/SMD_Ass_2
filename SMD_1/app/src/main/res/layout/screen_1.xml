@@ -1,30 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
-    >
+    android:orientation="vertical">
 
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         app:cardBackgroundColor="@color/navyblue">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:paddingTop="15dp"
-                >
+                android:orientation="horizontal"
+                android:paddingTop="35dp"
+                android:paddingBottom="10dp">
 
                 <ImageButton
                     android:layout_width="47dp"
-                    android:layout_height="39dp"
+                    android:layout_height="wrap_content"
                     android:layout_marginRight="10dp"
                     android:background="@color/navyblue"
-                    android:src="?attr/homeAsUpIndicator"
+                    android:id="@+id/Bback"
+                    android:src="@android:drawable/ic_menu_revert"
                     android:theme="@style/CardView.Light"
 
                     />
@@ -36,20 +41,63 @@
                     android:textColor="@color/white"
                     android:textSize="25sp" />
             </LinearLayout>
+
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content">
 
+
+                <Button
+                    android:layout_width="154dp"
+                    android:layout_height="67dp"
+                    android:layout_weight="1"
+                    android:text="@string/calls"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/Selected"
+                    android:drawableLeft="@android:drawable/stat_sys_phone_call"
+                    />
+<!--                    android:background=""-->
+
+<!--                    -->
+
+
                 <Button
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:drawableStart="@drawable/ic_launcher_foreground"
-                    android:text="Home"
-                    />
+                    android:layout_height="67dp"
+                    android:layout_weight="1"
+                    android:text="@string/messages"
+                    android:textColor="@color/white"
+                    android:backgroundTint="@color/navyblue"
+                android:drawableLeft="@android:drawable/sym_action_chat"/>
+
+
+
+
             </LinearLayout>
         </LinearLayout>
 
 
     </androidx.cardview.widget.CardView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+            <fragment
+                android:id="@+id/Callfrag"
+                android:name="com.example.smd_1.Callfrag"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                tools:layout="@layout/callfrag" />
+
+            <fragment
+                android:id="@+id/Messagefrag"
+                android:name="com.example.Messagefrag"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                tools:layout = "@layout/fragment_detail" />
+    </LinearLayout>
+
 
 </LinearLayout>
