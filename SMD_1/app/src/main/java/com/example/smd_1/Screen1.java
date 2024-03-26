@@ -8,9 +8,14 @@ import android.widget.ImageButton;
 
 import androidx.activity.EdgeToEdge;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentManager;
 
 public class Screen1 extends AppCompatActivity {
 ImageButton Bback;
+Button call,message;
+Fragment fragCall,fragMessage;
+FragmentManager manager;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +29,32 @@ ImageButton Bback;
                 startActivity(intent);
                 finish();
             }
+
+        });
+        manager=getSupportFragmentManager();
+
+        manager.beginTransaction()
+                .replace(R.id.frag_container, fragCall)
+                .commit();
+
+
+
+        call.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.frag_container, fragCall)
+                        .commit();
+            }
+        });
+
+        message.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.frag_container, fragMessage)
+                        .commit();
+            }
         });
 
 
@@ -31,7 +62,12 @@ ImageButton Bback;
     }
     public void init()
     {
+
         Bback=findViewById(R.id.Bback);
+        call=findViewById(R.id.call);
+        message=findViewById(R.id.message);
+        fragCall=new fragcall();
+        fragMessage=new fragmessage();
     }
 
 

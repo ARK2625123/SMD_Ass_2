@@ -37,7 +37,7 @@
                 <TextView
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:text="Screen 1"
+                    android:text="@string/screen_1"
                     android:textColor="@color/white"
                     android:textSize="25sp" />
             </LinearLayout>
@@ -52,27 +52,23 @@
                     android:layout_height="67dp"
                     android:layout_weight="1"
                     android:text="@string/calls"
+                    android:id="@+id/call"
                     android:textColor="@color/white"
-                    android:backgroundTint="@color/Selected"
+                    android:backgroundTint="@color/navyblue"
                     android:drawableLeft="@android:drawable/stat_sys_phone_call"
                     />
-<!--                    android:background=""-->
 
-<!--                    -->
 
 
                 <Button
-                    android:layout_width="wrap_content"
+                    android:layout_width="154dp"
                     android:layout_height="67dp"
                     android:layout_weight="1"
                     android:text="@string/messages"
+                    android:id="@+id/message"
                     android:textColor="@color/white"
                     android:backgroundTint="@color/navyblue"
-                android:drawableLeft="@android:drawable/sym_action_chat"/>
-
-
-
-
+                    android:drawableLeft="@android:drawable/sym_action_chat"/>
             </LinearLayout>
         </LinearLayout>
 
@@ -81,22 +77,26 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-            <fragment
-                android:id="@+id/Callfrag"
-                android:name="com.example.smd_1.Callfrag"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="1"
-                tools:layout="@layout/callfrag" />
+        android:layout_height="match_parent"
+        android:layout_gravity="center_vertical"
+        android:id="@+id/frag_container"
+        >
 
-            <fragment
-                android:id="@+id/Messagefrag"
-                android:name="com.example.Messagefrag"
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="2"
-                tools:layout = "@layout/fragment_detail" />
+        <fragment
+            android:id="@+id/fragcall"
+            android:name="com.example.smd_1.fragcall"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/call_frag" />
+
+        <fragment
+            android:id="@+id/fragmessage"
+            android:name="com.example.smd_1.fragmessage"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            tools:layout="@layout/message_frag" />
     </LinearLayout>
 
 

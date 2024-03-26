@@ -42,7 +42,7 @@
        <EditText
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:hint="First Name"
+           android:hint="@string/first_name"
            android:textColorHint="@color/Hint"
            android:padding="20dp"
            android:textColor="@color/white"
@@ -50,7 +50,7 @@
        <EditText
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:hint="Last Name"
+           android:hint="@string/last_name"
            android:textColorHint="@color/Hint"
            android:padding="20dp"
            android:textColor="@color/white"
@@ -58,7 +58,7 @@
        <EditText
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:hint="Email ID"
+           android:hint="@string/email_id"
            android:textColorHint="@color/Hint"
            android:padding="20dp"
            android:textColor="@color/white"
@@ -66,7 +66,7 @@
        <EditText
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
-           android:hint="Password"
+           android:hint="@string/password"
            android:textColorHint="@color/Hint"
            android:padding="20dp"
            android:textColor="@color/white"
@@ -75,7 +75,7 @@
            android:layout_width="match_parent"
            android:layout_height="wrap_content"
            android:padding="20dp"
-           android:hint="Retype Password"
+           android:hint="@string/retype_password"
            android:textColorHint="@color/Hint"
            android:textColor="@color/white"
            />
@@ -88,13 +88,13 @@
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Male"
+            android:text="@string/male"
             android:paddingRight="30dp"
             android:textColor="@color/white"/>
         <RadioButton
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:text="Female"
+            android:text="@string/female"
             android:textColor="@color/white"/>
 
     </RadioGroup>
@@ -109,7 +109,7 @@
     <Button
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Exit"
+        android:text="@string/exit"
         android:id="@+id/Bexit"
         android:layout_marginHorizontal="30dp"
         android:textSize="15sp"
@@ -121,7 +121,7 @@
         android:layout_height="wrap_content"
 
 
-        android:text="Sign-Up" />
+        android:text="@string/sign_up" />
 </LinearLayout>
 
    </LinearLayout>
