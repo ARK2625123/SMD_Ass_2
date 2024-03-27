@@ -20,5 +20,5 @@ public class Screen2 extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         EdgeToEdge.enable(this);
-        setContentView(R.layout.screen_1);
+        setContentView(R.layout.screen_2);
     }}
