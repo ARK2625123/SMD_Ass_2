@@ -1,3 +1,17 @@
 <resources>
     <string name="app_name">SMD_2</string>
+    <string name="rating">Rating</string>
+    <string name="restaurant">Restaurant</string>
+    <string name="name">Name</string>
+    <string name="location">Location</string>
+    <string name="phone_no">Phone no.</string>
+    <string name="desc">Desc</string>
+    <string name="add_restaurant">Add Restaurant</string>
+    <string name="enter_description">Enter Description</string>
+    <string name="enter_number">Enter Number</string>
+    <string name="enter_location">Enter Location</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="new_restaurant">New Restaurant</string>
+    <string name="enter_rating">Enter Rating</string>
+    <string name="type_to_search">Type to Search</string>
 </resources>

@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    >
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="377dp"
+        android:layout_height="525dp"
+        android:layout_gravity="center"
+
+
+        app:cardBackgroundColor="@color/material_dynamic_neutral30"
+        app:cardCornerRadius="50dp">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:orientation="vertical"
+            android:padding="70dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="@string/new_restaurant"
+                android:textColor="@color/title"
+                android:textSize="25sp" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etname"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/enter_name"
+                android:padding="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textAlignment="center"
+                android:textColorHint="#888888" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etlocation"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/enter_location"
+                android:padding="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textAlignment="center"
+                android:textColorHint="#888888" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etnumber"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/enter_number"
+                android:inputType="number"
+                android:padding="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textAlignment="center"
+                android:textColorHint="#888888" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etdesc"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/enter_description"
+                android:padding="8dp"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textAlignment="center"
+                android:textColorHint="#888888" />
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/etrating"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+
+                android:hint="@string/enter_rating"
+                android:padding="8dp"
+                android:inputType="numberDecimal"
+                android:paddingStart="8dp"
+                android:paddingEnd="8dp"
+                android:textAlignment="center"
+                android:textColorHint="#888888" />
+
+            <Button
+                android:id="@+id/btnadd"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:backgroundTint="@color/title"
+                android:text="@string/add_restaurant"
+                android:textColor="@color/black"
+                android:textSize="20dp">
+
+            </Button>
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
