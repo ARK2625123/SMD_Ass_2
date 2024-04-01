@@ -6,7 +6,7 @@
     >
 
     <androidx.cardview.widget.CardView
-        android:layout_width="377dp"
+        android:layout_width="match_parent"
         android:layout_height="525dp"
         android:layout_gravity="center"
 
@@ -16,11 +16,11 @@
 
 
         <LinearLayout
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_gravity="center"
             android:orientation="vertical"
-            android:padding="70dp">
+            android:padding="20dp">
 
             <TextView
                 android:layout_width="match_parent"

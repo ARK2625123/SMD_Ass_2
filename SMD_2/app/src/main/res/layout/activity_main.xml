@@ -15,12 +15,13 @@
     android:orientation="vertical">
     <androidx.cardview.widget.CardView
         android:layout_width="match_parent"
-        android:layout_height="66dp"
-        android:backgroundTint="@color/title">
+        android:layout_height="80dp"
+        android:backgroundTint="@color/title"
+        >
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="10dp"
+        android:layout_marginTop="18dp"
         android:text="@string/restaurant"
         android:textColor="@color/black"
         android:layout_gravity="center"
@@ -36,15 +37,18 @@
 </LinearLayout>
 
 
-    <LinearLayout
+    <FrameLayout
         android:layout_width="match_parent"
-        android:layout_height="608dp">
+        android:layout_marginTop="20dp"
+        android:layout_height="match_parent">
 
-        <androidx.recyclerview.widget.RecyclerView
-            android:id="@+id/rvrest"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content" />
-    </LinearLayout>
+    <androidx.recyclerview.widget.RecyclerView
+    android:id="@+id/rvrest"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+
+
 
     <com.google.android.material.floatingactionbutton.FloatingActionButton
         android:layout_width="wrap_content"
@@ -52,14 +56,14 @@
         android:backgroundTint="@color/black"
         android:src="@drawable/add"
         app:rippleColor="@color/title"
-        android:outlineAmbientShadowColor="@color/material_dynamic_neutral30"
+
         android:layout_marginEnd="10dp"
         android:layout_marginBottom="10dp"
-        app:layout_anchor="@id/rvrest"
+
         android:id="@+id/fabadd"
         android:layout_gravity="bottom|end"
-        app:layout_anchorGravity="bottom|end">
+        >
 
     </com.google.android.material.floatingactionbutton.FloatingActionButton>
-
+    </FrameLayout>
 </LinearLayout>

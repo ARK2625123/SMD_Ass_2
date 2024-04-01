@@ -53,16 +53,16 @@ public class restadapter extends RecyclerView.Adapter<restadapter.ViewHolder> {
 
     @Override
     public void onBindViewHolder(@NonNull ViewHolder holder, int position) {
-        holder.tvrating.setText(rests.get(position).getRating());
-        holder.tvname.setText(rests.get(position).getName());
-        holder.tvlocation.setText(rests.get(position).getLocation());
-        holder.tvnumber.setText(rests.get(position).getNumber());
-        holder.tvdesc.setText(rests.get(position).getDecription());
+        holder.tvrating.setText(filtrest.get(position).getRating());
+        holder.tvname.setText(filtrest.get(position).getName());
+        holder.tvlocation.setText(filtrest.get(position).getLocation());
+        holder.tvnumber.setText(filtrest.get(position).getNumber());
+        holder.tvdesc.setText(filtrest.get(position).getDecription());
     }
 
     @Override
     public int getItemCount() {
-        return rests.size();
+        return filtrest.size();
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder

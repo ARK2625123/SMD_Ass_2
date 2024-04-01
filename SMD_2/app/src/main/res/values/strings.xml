@@ -1,7 +1,7 @@
 <resources>
     <string name="app_name">SMD_2</string>
     <string name="rating">Rating</string>
-    <string name="restaurant">Restaurant</string>
+    <string name="restaurant">Restaurants</string>
     <string name="name">Name</string>
     <string name="location">Location</string>
     <string name="phone_no">Phone no.</string>
